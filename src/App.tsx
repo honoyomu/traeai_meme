@@ -1,6 +1,8 @@
 import './App.css';
 import MemeGenerator from './components/MemeGenerator';
 
+const INSFORGE_LOGO = new URL('../insforge.svg', import.meta.url).href;
+
 function App() {
   return (
     <>
@@ -18,7 +20,7 @@ function App() {
           className="group bg-gray-800/70 backdrop-blur-sm rounded-md px-4 py-2 flex items-center justify-center gap-3 shadow-lg ring-1 ring-white/10 cursor-pointer"
         >
           <span className="text-sm text-white font-medium tracking-wide group-hover:opacity-90">Powered by</span>
-          <img src="/insforge.svg" alt="InsForge" className="h-6 object-contain transition-opacity group-hover:opacity-90" loading="lazy" />
+          <img src={INSFORGE_LOGO} alt="InsForge" className="h-6 object-contain transition-opacity group-hover:opacity-90" loading="lazy" />
         </a>
       </div>
     </>
