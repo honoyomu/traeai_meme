@@ -9,6 +9,18 @@ function App() {
         <div />
       </div>
       <MemeGenerator />
+
+      <div className="fixed bottom-4 right-4 z-40">
+        <a
+          href="https://insforge.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group bg-gray-800/70 backdrop-blur-sm rounded-md px-4 py-2 flex items-center justify-center gap-3 shadow-lg ring-1 ring-white/10 cursor-pointer"
+        >
+          <span className="text-sm text-white font-medium tracking-wide group-hover:opacity-90">Powered by</span>
+          <img src="/insforge.svg" alt="InsForge" className="h-6 object-contain transition-opacity group-hover:opacity-90" loading="lazy" />
+        </a>
+      </div>
     </>
   );
 }

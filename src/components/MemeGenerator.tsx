@@ -246,14 +246,16 @@ export default function MemeGenerator() {
               {resultImage ? (
                 <>
                   <img src={resultImage} alt="Generated meme" className="max-w-full max-h-full object-contain" />
-                  <button
-                    type="button"
-                    onClick={downloadImage}
-                    className="absolute top-2 right-2 px-2 py-1 rounded-md bg-[#151515] border border-[#3a3a3a] text-gray-200 hover:bg-[#1a1a1a]"
-                    aria-label="Download PNG"
-                  >
-                    ⬇
-                  </button>
+                  <div className="absolute top-2 right-2 z-20">
+                    <button
+                      type="button"
+                      onClick={downloadImage}
+                      className="px-2 py-1 rounded-md bg-[#151515] border border-[#3a3a3a] text-gray-200 hover:bg-[#1a1a1a]"
+                      aria-label="Download PNG"
+                    >
+                      ⬇
+                    </button>
+                  </div>
                 </>
               ) : (
                 <div className="flex flex-col items-center gap-2 py-8">
