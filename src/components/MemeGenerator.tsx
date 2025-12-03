@@ -61,7 +61,6 @@ export default function MemeGenerator() {
         model,
         prompt: finalPrompt,
         images,
-        numImages: 1,
       });
 
       const b64 = response?.data?.[0]?.b64_json;
